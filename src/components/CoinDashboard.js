@@ -16,9 +16,10 @@ export default function CoinDashboard() {
       .catch((err) => console.log(err));
   }, []);
 
+
   return (
     <div className="App">
-      <h1>Crypto-Tracker</h1>
+      <h1>Cryptocurrencies Dashboard</h1>
       <table>
         <thead>
           <tr>
