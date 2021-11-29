@@ -29,8 +29,13 @@ export default function CoinDashboard() {
   return (
     <div className="App">
       <h1>Cryptocurrencies Dashboard</h1>
-      <div>
-        <input type="text" placeholder="Search" onChange={handleChange} />
+      <div id="SearchBar">
+        <input
+          id="SearchBarInput"
+          type="text"
+          placeholder="Search a cryptocurrency"
+          onChange={handleChange}
+        />
       </div>
       <table>
         <thead>

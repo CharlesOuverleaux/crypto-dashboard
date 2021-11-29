@@ -21,13 +21,28 @@ tbody {
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-#FormSearch {
+#SearchBar {
   display: flex;
   justify-content: flex-start;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 12px;
 }
+
+#SearchBarInput {
+  background-color: #0093E9;
+  color: #fff;
+  width: 250px;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  padding: 6px;
+}
+
+#SearchBarInput::placeholder {
+  color: #fff;
+  padding: 6px;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body{
