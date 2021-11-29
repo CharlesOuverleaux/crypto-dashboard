@@ -5,6 +5,8 @@ import Coin from "./Coin";
 
 export default function CoinDashboard() {
   const [coins, setCoins] = useState([]);
+  const [search, setSearch] = useState("");
+
   useEffect(() => {
     axios
       .get(
@@ -16,10 +18,20 @@ export default function CoinDashboard() {
       .catch((err) => console.log(err));
   }, []);
 
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const filteredCoins = coins.filter((coin) =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="App">
       <h1>Cryptocurrencies Dashboard</h1>
+      <div>
+        <input type="text" placeholder="Search" onChange={handleChange} />
+      </div>
       <table>
         <thead>
           <tr>
@@ -34,7 +46,7 @@ export default function CoinDashboard() {
           </tr>
         </thead>
         <tbody>
-          {coins.map((coin) => (
+          {filteredCoins.map((coin) => (
             <Coin key={coin.id} coin={coin} />
           ))}
         </tbody>
