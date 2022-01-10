@@ -1,3 +1,7 @@
+
+### Demo
+![Alt Text](http://g.recordit.co/K3ebvLgLcT.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
