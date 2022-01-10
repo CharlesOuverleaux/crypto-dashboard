@@ -1,6 +1,6 @@
 
 ### Demo
-![Alt Text](http://g.recordit.co/K3ebvLgLcT.gif)
+![Alt Text](http://g.recordit.co/mTg85D5XdY.gif)
 
 # Getting Started with Create React App
 
